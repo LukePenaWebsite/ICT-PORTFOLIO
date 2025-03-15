@@ -1,0 +1,320 @@
+<html>
+<head>
+<title>Lessons</title>
+<style>
+</style>
+</head>
+<body bgcolor="315f00" text="#000000">
+<font face="courier" size="7">
+<p align="center"><img src="les.png"></p>
+<table align="center" cellpadding="20" bgcolor="#91ff00" border="3" bordercolor="#000000">
+<tr>
+<th>
+<h1 align="center">>>LESSON 1</h1>
+</th>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthtml><br>
+&lthead>&ltscript type=“text/javascript”><br>
+function show_alert()<br>
+{alert (“WARNING! WARNING!”);}<br>
+&lt/script>&lt/head><br>
+&ltbody><br>
+&ltinput type=“button” onclick=“show_alert()”<br>
+value=“show alert box”/><br>
+&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthtml><br>
+&lthead>&ltscript type=“text/javascript”><br>
+function show_prompt()<br>
+{var name=prompt(“Please enter your name:”);<br>
+ if (name!=null && name!=“”)<br>
+{document.write(“Welcome ” +name + ”! Please come in!”);}}<br>
+&lt/script><br>
+&lt/head><br>
+&ltbody><br>
+&ltinput type=“button” onclick=“show_prompt()” value=“Click<br>
+here to begin”/)<br>
+&lt/body><br>
+&lt/html>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthtml><br>
+&lthead>&ltscript type=“text/javascript”><br>
+function show_confirm()<br>
+{var ans=confirm(“Do you want to proceed?”);<br>
+ if (ans==true)<br>
+{document.write(“You have entered Stage 2”);}<br>
+ else{document.write(“You will remain at Stage 1”);}}<br>
+&lt/script><br>
+&lt/head><br>
+&ltbody><br>
+&ltinput type=“button” onclick=“show_confirm()” value=“Click here<br>
+to begin”/)<br>
+&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<h1 align="center">>>LESSON 2</h1>
+</th>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthead>&lttitle>IF&lt/title><br>
+&ltscript type=“text/javascript”><br>
+function check()<br>
+{if (document.example.answer.value==“Web Scripting”)<br>
+{document.write(“You answered correctly!”);}}<br>
+&lt/script>&lt/head><br>
+&ltbody><br>
+&ltp>What is the title of this book?&lt/p><br>
+&ltform name=“example”><br>
+&ltinput type=“text” name=“answer” value=“”><br>
+&ltinput type=“button” name=“answerbutton” value=“SUBMIT”<br>
+onClick=check()><br>
+&lt/form>&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthead>&lttitle>If Else&lt/title><br>
+&ltscript type=“text/javascript”><br>
+function check()<br>
+{<br>
+if (document.example.answer.value==”Web Scripting”)<br>
+{document.write(“You answered correctly!”);}<br>
+else<br>
+{document.write(“Sorry. Try again.”);}}<br>
+&lt/script><br>
+&lt/head><br>
+&ltbody><br>
+&ltp>What is the title of this book?&lt/p><br>
+&ltform name=“example”><br>
+&ltinput type=“text” name=“answer” value=“”><br>
+&ltinput type=“button” name=“answerbutton” value=“SUBMIT”<br>
+onClick=check()>&lt/form>&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthead>&lttitle>If Else&lt/title><br>
+&ltscript type=“text/javascript”><br>
+function check()<br>
+{<br>
+if (document.example.answer.value==”Web Scripting”)<br>
+{document.write(“You answered correctly!”);}<br>
+else if (document.example.answer.value==“”)<br>
+{document.write(“You did not answer the question!”);}<br>
+else<br>
+{document.write(“Sorry. Try again!”);}}<br>
+&lt/script><br>
+&lt/head><br>
+&ltbody><br>
+&ltp>What is the title of this book?&lt/p><br>
+&ltform name=“example”><br>
+&ltinput type=“text” name=“answer” value=“”><br>
+&ltinput type=“button” name=“answerbutton” value=“SUBMIT” onClick=check()><br>
+&lt/form>&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthead>&lttitle>Switch&lt/title><br>
+&ltscript type=“text/javascript”><br>
+function bookcheck()<br>
+{ var book=document.frmbook.cmbbook.value<br>
+switch (book)<br>
+{case “1”: alert(“J.R.R Tolkien”)<br>
+break<br>
+case “2”: alert(“C.S. Lewis”)<br>
+break<br>
+case “3”: alert(“J.K Rowling”)<br>
+break<br>
+case “4”: alert(“Mark Twain”)<br>
+break<br>
+default: alert(“undetermined”)}}<br>
+&lt/script>&lt/head><br>
+&ltbody><br>
+&ltp>Select a book below to find the name of<br>
+the author&lt/p><br>
+&ltform name=formbook><br>
+&ltselect name=cmbbook><br>
+&ltoption value=1>Lord of the Rings&lt/option><br>
+&ltoption value=2>Chronicles of Narnia<br>
+&lt/option><br>
+&ltoption value=3>Harry Potter&lt/option><br>
+&ltoption value=4>The Adventures of<br>
+Huckleberry Finn&lt/option>&lt/select><br>
+&ltinput type=“button” name=“combo”<br>
+value=“SUBMIT” onClick=bookcheck()><br>
+&lt/form><br>
+&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<h1 align="center">>>LESSON 3</h1>
+</th>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthead>&lttitle>Switch&lt/title><br>
+&ltscript type=“text/javascript”><br>
+function bookcheck()<br>
+{ var book=document.frmbook.cmbbook.value<br>
+switch (book)<br>
+{case “1”: alert(“J.R.R Tolkien”)<br>
+break<br>
+case “2”: alert(“C.S. Lewis”)<br>
+break<br>
+case “3”: alert(“J.K Rowling”)<br>
+break<br>
+case “4”: alert(“Mark Twain”)<br>
+break<br>
+default: alert(“undetermined”)}}<br>
+&lt/script>&lt/head><br>
+&ltbody><br>
+&ltp>Select a book below to find the name of<br>
+the author&lt/p><br>
+&ltform name=frmbook><br>
+&ltselect name=cmbbook><br>
+&ltoption value=1>Lord of the Rings&lt/option><br>
+&ltoption value=2>Chronicles of Narnia<br>
+&lt/option><br>
+&ltoption value=3>Harry Potter&lt/option><br>
+&ltoption value=4>The Adventures of<br>
+Huckleberry Finn&lt/option>&lt/select><br>
+&ltinput type=“button” name=“combo”<br>
+value=“SUBMIT” onClick=bookcheck()><br>
+&lt/form><br>
+&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+<th>
+<h1 align="center">>>LESSON 4</h1>
+</th>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthtml><br>
+&lthead>&lttitle>For Loop Input Example&lt/title> &lt/head><br>
+&ltbody><br>
+&ltscript type="text/javascript"><br>
+{<br>
+var numberOfInputs = 3;<br>
+for (var i = 0; i &lt numberOfInputs; i++)<br>
+var userInput = prompt("Please enter a value (" + (i + 1) + " of " + numberOfInputs + ")");<br>
+document.write("You entered: " + userInput + "&ltbr/>");<br>
+}<br>
+&lt/script><br>
+&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthtml><br>
+&lthead>&lttitle>While Loop Input Example&lt/title>&lt/head><br>
+&ltbody><br>
+&ltscript<br>
+type="text/javascript"><br>
+var userInput = "";<br>
+userInput = prompt("Please enter a value (cannot be empty):");<br>
+{<br>
+if (userInput === "")<br>
+{<br>
+alert("Input cannot be empty. Please try again.");<br>
+&lt/script><br>
+&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthtml><br>
+&lthead>&lttitle>For-in Loop Input Example&lt/title> &lt/head><br>
+&ltbody><br>
+&ltscript type="text/javascript"><br>
+var numberOfInputs = prompt ("How many values do you want to input?"); numberOfInputs = parseInt(numberOfInputs);<br>
+var userInputs = [];<br>
+for (var i = 0; i &lt numberOfInputs; i++)<br>
+var input = prompt ("Enter value " + (i + 1) + ":");<br>
+userInputs[i] = input; <br>
+document.write(userInputs [index] + "&ltbr/>");<br>
+&lt/script><br>
+&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+&lt!DOCTYPE html><br>
+&lthtml><br>
+&lthead>&lttitle>For-in Loop Input Example&lt/title> &lt/head><br>
+&ltbody><br>
+&ltscript type="text/javascript"><br>
+var numberOfInputs = prompt ("How many values do you want to input?"); numberOfInputs = parseInt(numberOfInputs);<br>
+var userInputs = [];<br>
+for (var i = 0; i &lt numberOfInputs; i++)<br>
+var input = prompt("Enter value " + (i + 1) + ":");<br>
+userInputs[i] = input;<br>
+document.write(userInputs [index] + "&ltbr/>");<br>
+&lt/script><br>
+&lt/body><br>
+&lt/html><br>
+</p>
+</td>
+</tr>
+</table>
+</font>
+<p align="center"><a href="qtr3.html"><img src="return3.png"></a></p>
+</body>
+</html>
